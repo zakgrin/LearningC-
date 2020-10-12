@@ -22,23 +22,38 @@ int main(){
         2. can't be keyword e.g. return, end, for.
         3. can't start with a number.
         4. can't contain symbols except underscore '_'.
-        5. Must be type defined
+        5. variable type must be defined before name
 
-        Redomended:
+    Name Conventions:
         - long names are either separated by _ or by Caps letters
         - long names starts with small letters for variables
         - usually Class names starts with Caps letters. 
     */
 
-    // 2. Change Variables:
-    age = 15;
-
-    // 3. Print Variables:
+    // 2. Print Variables:
     cout << age << endl
          << name << endl
          << gpa << endl
          << sucess << endl // prints 1 when true and 0 when flase
          << letterGrade << endl;
+
+    
+    // 3. Change Variables:
+    age = 15;
+    cout << "age (after change): " << age << endl;
+
+    // Example 1: 
+    int i; // here no value was assigned to x, so a number will be assigned.
+    i = 5; // here we define value of x in a separate line. 
+    cout << i << endl; 
+
+    // Example 2: Multiple variables in one line
+    int x, y, z;
+    x = 5;
+    y = 10;
+    z = 100;
+    cout << x << y << z << endl; // here numbers will be printed without space as "510100"
+    
 
     return 0;
 }
