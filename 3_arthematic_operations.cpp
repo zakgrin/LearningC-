@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 
     double apple = 40;
-    double orange = 30;
+    double orange = 20;
 
     // Basic Operations:
     int sum = apple + orange;
@@ -18,7 +18,7 @@ int main(){
     cout << "mul = " << mul << endl;
     cout << "integer div = " << i_div << endl;
     cout << "double div = " << d_div << endl;
-
+    
     // Special Form: 
     int j = 1; 
     j++; // to add 1
