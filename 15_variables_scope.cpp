@@ -2,7 +2,7 @@
 using namespace std;
 
 // Global variables
-int x = 99; // but local variables have the piority
+int x = 99; // but local variables have the piority (if defined with the same name)
 
 int main(){
     
