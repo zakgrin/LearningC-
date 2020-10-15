@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+
 int main(){
 
     // Define Variables:
@@ -20,6 +21,7 @@ int main(){
     cout << "x == y: " << equal << endl;
     cout << "x != y: " << notEqual << endl;
     cout << "x > y: " << greater << endl;
+    cout << "!(x > y): " << !greater << endl;
     cout << "x < y: " << less << endl;
     cout << "x >= y: " << greaterOrEqual << endl;
     cout << "x <= y: " << lessOrEqual << endl;
