@@ -42,8 +42,9 @@ int main(){
     cout << "age (after change): " << age << endl;
 
     // Example 1: 
-    int i; // here no value was assigned to x, so a number will be assigned.
-    i = 5; // here we define value of x in a separate line. 
+    int i; // here no value was assigned to i, so a number will be assigned.
+    cout << "Example 1: i=" << i << endl;
+    i = 5; // here we define value of i in a separate line. 
     cout << i << endl; 
 
     // Example 2: Multiple variables in one line
@@ -53,7 +54,6 @@ int main(){
     z = 100;
     cout << x << y << z << endl; // here numbers will be printed without space as "510100"
     
-
     return 0;
 }
 
