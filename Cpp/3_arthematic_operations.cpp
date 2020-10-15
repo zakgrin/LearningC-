@@ -21,6 +21,7 @@ int main(){
     
     // Special Form: 
     int j = 1; 
+    j = j + 1;
     j++; // to add 1
     ++j; // to add 1
     j += 1; // to add any number

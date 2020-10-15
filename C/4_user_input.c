@@ -5,7 +5,27 @@ int main(){
 
     printf("Welcome to the program\n");
 
-    int age;
+    /*
+    Example 1: 
+    */
+
+    // Define Variables:
+    int currentYear = 2020;
+    int year;
+
+    // Input Variable:    
+    printf("Please enter your birth year: ");
+    scanf("%d", &year);
+
+    // Calc and Print: 
+    int age = currentYear - year;
+    printf("Your age is %d \n", age);
+
+    /*
+    Example 2: 
+    */
+
+    // int age; we shouldn't define a variable twice.
     printf("- please enter your age: ");
     scanf("%d", &age); // (%d) for decimal. (&age) pointer to variable "age".
     printf("    - your age is %d \n", age);
@@ -16,18 +36,4 @@ int main(){
     printf("    - your weight is %.2f \n", weight); // (%.2f) take first two digits after ".".
 
     return 0;
-
-    // // Define Variables:
-    // int currentYear = 2020;
-    // int year;
-
-
-    // // Input Variable:    
-    // cout << "Please enter your birth year: ";
-    // cin >> year;
-
-    // // Calc and Print: 
-    // int age = currentYear - year;
-    // cout << "Your age is " << age << endl;
-
 }

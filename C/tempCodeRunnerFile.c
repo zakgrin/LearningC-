@@ -1,5 +1,9 @@
-   // int c = 1;
-    // printf("c=%d \n", c);
-    // printf("c++=%d \n", c++); // addition after line
-    // printf("c=%d \n", c); // here we see value of 2
-    // printf("++c=%d \n", ++c); // addition during the line, here we see value of 3
+    // int age;
+    // printf("- please enter your age: ");
+    // scanf("%d", &age); // (%d) for decimal. (&age) pointer to variable "age".
+    // printf("    - your age is %d \n", age);
+    
+    // float weight;
+    // printf("- please enter your weight: ");
+    // scanf("%f", &weight); // (%f) for float.
+    // printf("    - your weight is %.2f \n", weight); // (%.2f) take first two digits after ".".

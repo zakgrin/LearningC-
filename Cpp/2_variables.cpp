@@ -1,15 +1,21 @@
 #include<iostream>
 using namespace std;
 
+// No need to define bool type in C++.
+// Type "bool" is defined by default.
+
 int main(){
 
     // 1. Define Variables:
     // int:
     int age = 29; 
     // string: between ""
+    // - Note that varialbe name does not need a pointer or array syntax
+    // - Note here we use type "string" in C++ which same as "char" in C
     const string name = "Mohamed"; // const: variable can't be changed. 
     // double or float: 
-    double gpa = 3.2;
+    float gpa_f = 3.2;
+    double gpa_d = 3.222222;
     // bool: true or false
     bool sucess = true;
     // char: only 1 character between ''
@@ -32,13 +38,12 @@ int main(){
     // 2. Print Variables:
     cout << age << endl
          << name << endl
-         << gpa << endl
+         << gpa_d << endl
          << sucess << endl // prints 1 when true and 0 when flase
          << letterGrade << endl;
 
-    
     // 3. Change Variables:
-    age = 15;
+    age = 15; // when we change value we don't need to define type again.
     cout << "age (after change): " << age << endl;
 
     // Example 1: 
