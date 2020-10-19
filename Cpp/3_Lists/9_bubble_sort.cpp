@@ -3,7 +3,7 @@ using namespace std;
 
 void printList(int*, int);
 void swap(int &, int &);
-int bubbleSort(int*, int); // no need to use pointer with lists!
+int bubbleSort(int* list, int size, bool ascending = true); // no need to use pointer with lists!
 
 int main(){
     const int mySize = 5;
@@ -11,6 +11,8 @@ int main(){
 
     printList(myList, mySize);
     bubbleSort(myList, mySize);
+    printList(myList, mySize);
+    bubbleSort(myList, mySize, false);
     printList(myList, mySize);
 }
 
@@ -33,14 +35,28 @@ void swap(int &x, int &y){
     y = temp;
 }
 
-// no need to use pointer with lists! (not int* &list)
-int bubbleSort(int* list, int size){
+// no need to use pointer with lists (not int* &list)
+// because lists are passed by reference already!
+int bubbleSort(int* list, int size, bool ascending){
 
-    for (int i=0; i<size; i++){
-        for (int j=0; j<size-1; j++){
-            if (list[j] > list[j+1])
-                swap(list[j], list[j+1]);
-        }            
+    if (ascending)
+    {
+        for (int i=0; i<size; i++){
+            for (int j=0; j<size-1; j++){
+                if (list[j] > list[j+1])
+                    swap(list[j], list[j+1]);
+            }            
+        }
     }
+    else
+    {
+        for (int i=0; i<size; i++){
+            for (int j=0; j<size-1; j++){
+                if (list[j] < list[j+1])
+                    swap(list[j], list[j+1]);
+            }            
+        }
+    }
+    
     return 0;
 }
