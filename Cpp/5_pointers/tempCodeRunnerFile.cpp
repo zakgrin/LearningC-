@@ -1,0 +1,1 @@
+cout << array << " >> this is a pointer value!" << endl << endl;
