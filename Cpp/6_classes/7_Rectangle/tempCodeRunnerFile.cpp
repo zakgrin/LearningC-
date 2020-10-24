@@ -1,0 +1,2 @@
+    // myRect.area(); 
+    // myRect.perimeter(); 
